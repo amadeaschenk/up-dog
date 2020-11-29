@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+
+    animation: colorchange 10s ease infinite;
+    margin:0;
+    padding:0;
+    font-size:16px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+@keyframes colorchange
+ {
+   0% {background: ivory;}
+  25% {background: cornsilk;}
+  50% {background: papayawhip;}
+  75% {background: cornsilk;}
+  100% {background: ivory;}
+}
+
+header {
+  display: block;
+  max-width: 70%;
+  margin:1% auto 5% auto;
+  padding: 3%;
+
+
+  position: static;
+  animation: colorchange 10s ease infinite;@keyframes colorchange
+   {
+     0% {background: ivory;}
+    25% {background: cornsilk;}
+    50% {background: papayawhip;}
+    75% {background: cornsilk;}
+    100% {background: ivory;}
+  }
+
+  .headline {
+    display: none;
+  }
+
+  h1 {
+    display: block;
+    align: center;
+font-size: 3rem;
+  }
+
+}
+img{
+max-width: 100%;
+display: grid;
+margin: 0px auto;
+}
+
+p {font-size: 100%;
+  text-align: center;
+}
+
+
+
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  margin: 20px 20px 20px 20px;
+}
+
+.hotdogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin: 20px 20px 20px 20px;
+}
+
+.ingredients {
+  display: block;
+}
+
+
+article {
+  display: block;
+  align-content: center;
+
+  font-size: 2em;
+  max-width: 100%;
+
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 0px;
+
+
+}
+
+
+
+ul {
+  /* font-size: 2em; */
+  text-align: center;
+  list-style-type: none;
+  max-width: 100%;
+  /* line-height: 1em; */
+  line-height:1.2em;
+  background-color: inherit;
+  padding-left: 0px;
+
+
+}
+
+a {
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+a:hover {color: indianred;
+
+}
+
+#gotcha {
+  color: indianred;
+  font-size: 4.5rem;
+  margin-bottom: 0px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: indianred;
+    color: ivory;
+
+}
+
+.footer link:hover {
+  color: black;
+}
+
+
+.big {
+  font-size: 150pt;
+  text-align: center;
+  margin: -50px auto 0px auto;
+  color: indianred;
+}
+
+.smaller {
+  font-size: 1.2em;
+  text-align: center;
+  margin: -20px auto;
+  color: indianred;
+}
+
+nav{
+  display: grid;
+  /* Change previous grid */
+  grid-auto-flow: column;
+  grid-gap: 2%;
+  padding:2% auto;
+  font-size: 2em;
+}
+
+nav a{
+  margin: 20px auto;
+  text-decoration: none;
+  color: #322311;
+  font-weight: normal;
+  font-size: 100%;
+
+}
+
+/* START MOBILE FORM STYLES */
+  .form-container{
+    margin: 20px auto;
+    width:90%;
+  }
+  form p{
+    margin-bottom:5px;
+  }
+  label{
+    display:block;
+  }
+  #newsletter input{
+    display:inline;
+    width:auto;
+  }
+  input{
+    /* FOR MOBILE WIDTH:100% */
+    width:100%;
+    padding:1.7%;
+    margin:1.5% 0;
+    font-size: 1em;
+    border-radius: 10px;
+    color: ivory;
+    font-family: 'Special Elite', cursive;
+    box-sizing: border-box;
+    background-color: indianred;
+  }
+  textarea{
+    min-height:100px;
+    width: 100%;
+    padding: 2%;
+    margin: 1.5% 0;
+    font-size: 1em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: indianred;
+
+
+  }
+  button{
+    /* CHANGED COLORS bellow */
+    background: indianred;
+    border: 1px solid #faf8ed;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Text color */
+    color:#322311;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding:2% 4%;
+    font-size: 1em;
+  }
+  /* END MOBILE FORM STYLES */
+
+h3  {
+  text-align: center;
+  font-size: 200%;
+  color: indianred;
+  text-transform: uppercase;
+  margin-top: 5vh;
+}
+
+
+
+
+@media only screen and (min-width:1000px){
+    /* ---- Desktop styles below ---- */
+
+          header {
+            display: block;
+            max-width: 30%;
+            padding 1%;
+            margin-left: 3%;
+          }
+
+
+
+
+
+
+
+            animation: colorchange 10s ease infinite;@keyframes colorchange
+             {
+               0% {background: ivory;}
+              25% {background: cornsilk;}
+              50% {background: papayawhip;}
+              75% {background: cornsilk;}
+              100% {background: ivory;}
+            }
+
+
+
+          nav{
+            display: grid;
+            /* Change previous grid */
+            grid-auto-flow: column;
+            grid-gap: 2%;
+            padding:2% auto;
+            font-size: 3em;
+          }
+
+          nav a{
+            margin: 20px auto;
+            text-decoration: none;
+            color: #322311;
+            font-weight: normal;
+            font-size: 50%;
+
+          }
+
+          main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 1rem;
+            margin: 20px 20px 20px 20px;
+          }
+
+          .hotdog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 1rem;
+            margin: 20px 20px 20px 20px;
+          }
+
+          .ingredients {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-gap: 1rem;
+            margin: 20px 20px 20px 20px;
+          }
+
+          .form-container{
+            margin: 20px auto;
+            width:60%;
+          }
+
+          .big {
+            font-size: 150pt;
+            text-align: center;
+            margin: 30vh auto 0px auto;
+            color: indianred;
+          }
+
+          }
